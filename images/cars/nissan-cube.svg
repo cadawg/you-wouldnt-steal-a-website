@@ -1,0 +1,13 @@
+<svg viewBox="0 0 400 165" xmlns="http://www.w3.org/2000/svg">
+  <!-- 2010 Nissan Cube - famously box-shaped, tall, nearly rectangular -->
+  <path d="M62,155 L62,50 L86,44 L296,44 L320,50 L332,78 L332,155 Z" fill="white"/>
+  <!-- large greenhouse (characteristic of the Cube) -->
+  <rect x="80" y="50" width="70" height="44" rx="2" fill="#333"/>
+  <rect x="158" y="50" width="108" height="44" rx="2" fill="#333"/>
+  <!-- wheel cutouts -->
+  <circle cx="100" cy="135" r="22" fill="#111" stroke="white" stroke-width="4"/>
+  <circle cx="292" cy="135" r="22" fill="#111" stroke="white" stroke-width="4"/>
+  <!-- rims -->
+  <circle cx="100" cy="135" r="9" fill="#444" stroke="white" stroke-width="2"/>
+  <circle cx="292" cy="135" r="9" fill="#444" stroke="white" stroke-width="2"/>
+</svg>

@@ -1,0 +1,16 @@
+<svg viewBox="0 0 400 165" xmlns="http://www.w3.org/2000/svg">
+  <!-- 2004 Pontiac Aztek - chunky crossover, higher ride, famously ugly -->
+  <path d="M18,155 L18,116 L46,88 L78,74 L128,62 L258,62 L295,67 L342,82 L378,106 L388,128 L388,155 Z" fill="white"/>
+  <!-- windows -->
+  <polygon points="53,87 82,74 128,63 128,87 53,87" fill="#333"/>
+  <polygon points="133,63 253,63 253,87 133,87" fill="#333"/>
+  <polygon points="258,63 290,68 290,87 258,87" fill="#333"/>
+  <!-- distinctive Aztek lower body cladding (two-tone effect) -->
+  <path d="M18,128 L18,155 L388,155 L388,128 Z" fill="rgba(160,160,160,0.3)"/>
+  <!-- wheel cutouts (slightly larger - SUV tyres) -->
+  <circle cx="88" cy="133" r="23" fill="#111" stroke="white" stroke-width="4"/>
+  <circle cx="308" cy="133" r="23" fill="#111" stroke="white" stroke-width="4"/>
+  <!-- rims -->
+  <circle cx="88" cy="133" r="9" fill="#444" stroke="white" stroke-width="2"/>
+  <circle cx="308" cy="133" r="9" fill="#444" stroke="white" stroke-width="2"/>
+</svg>

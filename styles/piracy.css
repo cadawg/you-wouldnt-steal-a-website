@@ -23,7 +23,7 @@ body {
     font-size: 64px;
     transform: scaleX(2.79);
     text-transform: uppercase;
-    width: 35.7%;
+    width: 25%;
     transform-origin: 0 0;
     position: relative;
     margin: 10px 0;
@@ -207,8 +207,124 @@ a {
     color: #FCA300;
 }
 
+/* Car picker */
+.car-picker {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.car-picker-title {
+    color: #FCA300;
+    font-size: 20px;
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+
+.car-option {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 8px 8px;
+    border: 2px solid #333;
+    background-color: #0d0d0d;
+    transition: border-color 0.15s, background-color 0.15s;
+    user-select: none;
+}
+
+.car-option img {
+    width: 90%;
+    height: auto;
+    transition: filter 0.15s;
+    animation: carFloat1 3.2s ease-in-out infinite;
+}
+
+.car-option:nth-child(2) img { animation-name: carFloat2; animation-duration: 2.8s; animation-delay: -0.9s; }
+.car-option:nth-child(3) img { animation-name: carFloat1; animation-duration: 3.5s; animation-delay: -1.7s; }
+.car-option:nth-child(4) img { animation-name: carFloat3; animation-duration: 2.6s; animation-delay: -0.3s; }
+.car-option:nth-child(5) img { animation-name: carFloat2; animation-duration: 3.1s; animation-delay: -2.1s; }
+.car-option:nth-child(6) img { animation-name: carFloat3; animation-duration: 2.9s; animation-delay: -1.1s; }
+.car-option:nth-child(7) img { animation-name: carFloat1; animation-duration: 3.4s; animation-delay: -0.6s; }
+.car-option:nth-child(8) img { animation-name: carFloat2; animation-duration: 3.0s; animation-delay: -1.5s; }
+
+@keyframes carFloat1 {
+    0%   { transform: translateY(0px) rotate(0deg); }
+    30%  { transform: translateY(-6px) rotate(0.8deg); }
+    70%  { transform: translateY(5px) rotate(-0.6deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+}
+@keyframes carFloat2 {
+    0%   { transform: translateY(0px) translateX(0px) rotate(0deg); }
+    25%  { transform: translateY(-5px) translateX(3px) rotate(-1deg); }
+    75%  { transform: translateY(4px) translateX(-2px) rotate(0.7deg); }
+    100% { transform: translateY(0px) translateX(0px) rotate(0deg); }
+}
+@keyframes carFloat3 {
+    0%   { transform: translateY(2px) rotate(0.4deg); }
+    40%  { transform: translateY(-7px) rotate(-0.9deg); }
+    80%  { transform: translateY(3px) rotate(0.5deg); }
+    100% { transform: translateY(2px) rotate(0.4deg); }
+}
+
+.car-option span {
+    font-size: 11px;
+    color: #aaa;
+    text-align: center;
+    margin-top: 6px;
+    line-height: 1.3;
+}
+
+.car-option:hover {
+    border-color: #005599;
+    background-color: #0a0a1a;
+}
+
+.car-option:hover img {
+    filter: drop-shadow(0 0 6px rgba(0, 140, 255, 0.7))
+            drop-shadow(0 0 14px rgba(0, 100, 220, 0.4));
+}
+
+.car-option.selected {
+    border-color: #0088ff;
+    background-color: #050515;
+}
+
+.car-option.selected img {
+    filter: drop-shadow(0 0 8px rgba(0, 160, 255, 1))
+            drop-shadow(0 0 20px rgba(0, 120, 255, 0.8))
+            drop-shadow(0 0 40px rgba(0, 80, 200, 0.5));
+}
+
+.car-option.selected span {
+    color: #66ccff;
+}
+
+.selected-filename {
+    margin-top: 12px;
+    padding: 6px 10px;
+    background-color: #111;
+    border-left: 3px solid #0088ff;
+}
+
+#filename-text {
+    font-size: 12px;
+    color: #66ccff;
+    font-family: monospace;
+    word-break: break-all;
+}
+
 .progress-bar {
-    margin-top: 100px;
+    margin-top: 40px;
     width: 100%;
     max-width: 1200px;
 }
@@ -240,6 +356,7 @@ a {
     margin-top: 50px;
     width: 100%;
     text-align: center;
+    margin-bottom: 100px;
 }
 
 #download {
@@ -290,6 +407,47 @@ a {
     width: 100%;
     background: black;
     text-align: center;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#download-done.hidden {
+    display: none;
+}
+
+#download-done:not(.hidden) {
+    display: flex;
+}
+
+#download-done h2 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #888;
+    margin: 0 0 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.downloaded-car-name {
+    font-size: clamp(13px, 2vw, 22px);
+    color: #00cc44;
+    font-family: monospace;
+    margin: 0 0 30px;
+    word-break: break-all;
+    max-width: 900px;
+    border: 1px solid #00441a;
+    padding: 12px 18px;
+    background: #001a09;
+    text-align: left;
+}
+
+.downloaded-car-name::before {
+    content: "✓  ";
+    color: #00ff55;
 }
 
 .only-showing {

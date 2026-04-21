@@ -1,0 +1,13 @@
+<svg viewBox="0 0 400 165" xmlns="http://www.w3.org/2000/svg">
+  <!-- 1994 Jaguar XJ220 - long, low, smooth curves -->
+  <path d="M5,152 L10,140 L28,120 L62,100 L108,83 L168,74 L228,73 L288,77 L335,90 L370,108 L393,130 L395,152 Z" fill="white"/>
+  <!-- windows -->
+  <polygon points="112,82 165,75 225,74 225,92 112,92" fill="#333"/>
+  <polygon points="230,74 283,78 283,92 230,92" fill="#333"/>
+  <!-- wheel cutouts -->
+  <circle cx="95" cy="135" r="20" fill="#111" stroke="white" stroke-width="4"/>
+  <circle cx="308" cy="135" r="20" fill="#111" stroke="white" stroke-width="4"/>
+  <!-- rims -->
+  <circle cx="95" cy="135" r="8" fill="#444" stroke="white" stroke-width="2"/>
+  <circle cx="308" cy="135" r="8" fill="#444" stroke="white" stroke-width="2"/>
+</svg>

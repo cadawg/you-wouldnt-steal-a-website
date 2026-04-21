@@ -1,0 +1,15 @@
+<svg viewBox="0 0 400 165" xmlns="http://www.w3.org/2000/svg">
+  <!-- 1987 Toyota MR2 AW11 - small mid-engine sporty coupe, pop-up headlights -->
+  <path d="M42,155 L40,128 L58,110 L88,90 L138,75 L193,70 L253,72 L296,82 L330,100 L360,124 L366,155 Z" fill="white"/>
+  <!-- angular greenhouse typical of the era -->
+  <polygon points="93,89 138,75 191,71 191,91 93,91" fill="#333"/>
+  <polygon points="196,71 250,73 250,91 196,91" fill="#333"/>
+  <!-- pop-up headlight housings (flat when closed) -->
+  <rect x="44" y="128" width="20" height="12" rx="1" fill="#333"/>
+  <!-- wheel cutouts -->
+  <circle cx="93" cy="135" r="20" fill="#111" stroke="white" stroke-width="4"/>
+  <circle cx="306" cy="135" r="20" fill="#111" stroke="white" stroke-width="4"/>
+  <!-- rims -->
+  <circle cx="93" cy="135" r="8" fill="#444" stroke="white" stroke-width="2"/>
+  <circle cx="306" cy="135" r="8" fill="#444" stroke="white" stroke-width="2"/>
+</svg>

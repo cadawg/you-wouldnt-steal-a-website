@@ -1,0 +1,13 @@
+<svg viewBox="0 0 400 165" xmlns="http://www.w3.org/2000/svg">
+  <!-- 2016 Lamborghini Aventador - very low, long front, wedge supercar -->
+  <path d="M5,155 L5,142 L22,126 L60,108 L105,92 L155,81 L205,76 L262,78 L312,85 L358,96 L390,112 L398,132 L398,155 Z" fill="white"/>
+  <!-- very low small greenhouse -->
+  <polygon points="110,91 158,81 202,77 202,93 110,93" fill="#333"/>
+  <polygon points="207,77 258,79 258,93 207,93" fill="#333"/>
+  <!-- wheel cutouts -->
+  <circle cx="98" cy="138" r="20" fill="#111" stroke="white" stroke-width="4"/>
+  <circle cx="315" cy="138" r="20" fill="#111" stroke="white" stroke-width="4"/>
+  <!-- rims -->
+  <circle cx="98" cy="138" r="8" fill="#444" stroke="white" stroke-width="2"/>
+  <circle cx="315" cy="138" r="8" fill="#444" stroke="white" stroke-width="2"/>
+</svg>

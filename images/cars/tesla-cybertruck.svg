@@ -1,0 +1,14 @@
+<svg viewBox="0 0 400 165" xmlns="http://www.w3.org/2000/svg">
+  <!-- 2023 Tesla Cybertruck - all sharp angles, no curves whatsoever, pickup -->
+  <polygon points="15,155 15,126 55,80 95,60 238,60 238,82 372,82 372,155" fill="white"/>
+  <!-- entire front-to-cab is glazing on the Cybertruck -->
+  <polygon points="62,78 95,61 237,61 237,82 62,82" fill="#333"/>
+  <!-- cab / bed divider -->
+  <rect x="235" y="60" width="6" height="95" fill="#111"/>
+  <!-- wheel cutouts -->
+  <circle cx="100" cy="133" r="23" fill="#111" stroke="white" stroke-width="4"/>
+  <circle cx="318" cy="133" r="23" fill="#111" stroke="white" stroke-width="4"/>
+  <!-- rims - angular style -->
+  <circle cx="100" cy="133" r="9" fill="#444" stroke="white" stroke-width="2"/>
+  <circle cx="318" cy="133" r="9" fill="#444" stroke="white" stroke-width="2"/>
+</svg>
