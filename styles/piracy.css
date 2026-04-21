@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
 
-html, body {
+html {
     margin: 0;
     background-color: black;
     color: white;
     font-family: "Arial", serif;
+}
+
+body {
+    margin: 0;
 }
 
 body {
