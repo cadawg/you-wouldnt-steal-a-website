@@ -58,7 +58,7 @@ download.addEventListener("click", function(event) {
                 downloadDone.classList.remove("hidden");
                 let iframe = document.createElement("iframe");
                 iframe.width = "100%";
-                iframe.height = "249";
+                iframe.height = "166";
                 iframe.scrolling = "no";
                 iframe.frameBorder = "no";
                 iframe.allow = "autoplay";
