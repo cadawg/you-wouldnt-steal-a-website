@@ -432,6 +432,17 @@ a {
     letter-spacing: 3px;
 }
 
+#soundcloud-player {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+#soundcloud-player iframe {
+    display: block;
+    width: 100%;
+}
+
 .downloaded-car-name {
     font-size: clamp(13px, 2vw, 22px);
     color: #00cc44;

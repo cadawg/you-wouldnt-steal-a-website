@@ -56,6 +56,14 @@ download.addEventListener("click", function(event) {
                 clearInterval(interval);
                 downloadedCarName.textContent = selectedFilename;
                 downloadDone.classList.remove("hidden");
+                let iframe = document.createElement("iframe");
+                iframe.width = "100%";
+                iframe.height = "166";
+                iframe.scrolling = "no";
+                iframe.frameBorder = "no";
+                iframe.allow = "autoplay";
+                iframe.src = "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/rand0ll/u-wouldnt-download-a-car&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true";
+                document.getElementById("soundcloud-player").appendChild(iframe);
             }
         }, 50);
     } else {
