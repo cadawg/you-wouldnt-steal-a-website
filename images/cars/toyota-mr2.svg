@@ -1,15 +1,57 @@
 <svg viewBox="0 0 400 165" xmlns="http://www.w3.org/2000/svg">
-  <!-- 1987 Toyota MR2 AW11 - small mid-engine sporty coupe, pop-up headlights -->
-  <path d="M42,155 L40,128 L58,110 L88,90 L138,75 L193,70 L253,72 L296,82 L330,100 L360,124 L366,155 Z" fill="white"/>
-  <!-- angular greenhouse typical of the era -->
-  <polygon points="93,89 138,75 191,71 191,91 93,91" fill="#333"/>
-  <polygon points="196,71 250,73 250,91 196,91" fill="#333"/>
-  <!-- pop-up headlight housings (flat when closed) -->
-  <rect x="44" y="128" width="20" height="12" rx="1" fill="#333"/>
-  <!-- wheel cutouts -->
-  <circle cx="93" cy="135" r="20" fill="#111" stroke="white" stroke-width="4"/>
-  <circle cx="306" cy="135" r="20" fill="#111" stroke="white" stroke-width="4"/>
-  <!-- rims -->
-  <circle cx="93" cy="135" r="8" fill="#444" stroke="white" stroke-width="2"/>
-  <circle cx="306" cy="135" r="8" fill="#444" stroke="white" stroke-width="2"/>
+  <!-- Toyota MR2 AW11: mid-engine 80s sports car, pop-up headlights, angular greenhouse -->
+  <path d="M 42,152 L 40,130 Q 44,114 58,104 Q 72,93 90,85 L 138,73 L 193,69 L 254,70 L 294,79 Q 326,90 352,114 Q 362,130 365,152 Z" fill="white"/>
+
+  <!-- angular windshield -->
+  <polygon points="94,84 138,74 191,70 191,90 138,90 94,90" fill="#2e2e2e"/>
+  <!-- rear window (more upright on the MR2) -->
+  <polygon points="196,70 251,71 251,90 196,90" fill="#2e2e2e"/>
+
+  <!-- pop-up headlight housings (flat closed panels at front) -->
+  <rect x="43" y="126" width="24" height="11" rx="1" fill="#333"/>
+  <line x1="43" y1="131" x2="67" y2="131" stroke="#555" stroke-width="1"/>
+
+  <!-- rear taillights (slim horizontal bar) -->
+  <rect x="353" y="119" width="13" height="20" rx="1" fill="#ff3322" opacity="0.88"/>
+
+  <!-- mid-engine intake slot (behind door, before rear arch) -->
+  <polygon points="256,79 268,82 268,104 256,100" fill="#1e1e1e"/>
+  <line x1="262" y1="82" x2="262" y2="103" stroke="#555" stroke-width="1"/>
+
+  <!-- body character line -->
+  <path d="M 58,132 Q 92,118 193,113 Q 254,113 294,118 Q 326,124 348,134" stroke="#bbb" stroke-width="1.5" fill="none" opacity="0.4"/>
+
+  <!-- door seam -->
+  <line x1="196" y1="69" x2="198" y2="152" stroke="#ccc" stroke-width="1" opacity="0.38"/>
+
+  <!-- front wheel arch -->
+  <circle cx="93" cy="137" r="23" fill="#111"/>
+  <!-- rear wheel arch -->
+  <circle cx="306" cy="137" r="23" fill="#111"/>
+
+  <!-- front wheel -->
+  <g transform="translate(93,137)">
+    <circle r="19" fill="#1a1a1a" stroke="white" stroke-width="3"/>
+    <circle r="6" fill="#3a3a3a" stroke="#bbb" stroke-width="1.5"/>
+    <g stroke="#888" stroke-width="1.5">
+      <line x1="0" y1="-7" x2="0" y2="-16"/>
+      <line x1="0" y1="-7" x2="0" y2="-16" transform="rotate(72)"/>
+      <line x1="0" y1="-7" x2="0" y2="-16" transform="rotate(144)"/>
+      <line x1="0" y1="-7" x2="0" y2="-16" transform="rotate(216)"/>
+      <line x1="0" y1="-7" x2="0" y2="-16" transform="rotate(288)"/>
+    </g>
+  </g>
+
+  <!-- rear wheel -->
+  <g transform="translate(306,137)">
+    <circle r="19" fill="#1a1a1a" stroke="white" stroke-width="3"/>
+    <circle r="6" fill="#3a3a3a" stroke="#bbb" stroke-width="1.5"/>
+    <g stroke="#888" stroke-width="1.5">
+      <line x1="0" y1="-7" x2="0" y2="-16"/>
+      <line x1="0" y1="-7" x2="0" y2="-16" transform="rotate(72)"/>
+      <line x1="0" y1="-7" x2="0" y2="-16" transform="rotate(144)"/>
+      <line x1="0" y1="-7" x2="0" y2="-16" transform="rotate(216)"/>
+      <line x1="0" y1="-7" x2="0" y2="-16" transform="rotate(288)"/>
+    </g>
+  </g>
 </svg>

@@ -1,13 +1,58 @@
 <svg viewBox="0 0 400 165" xmlns="http://www.w3.org/2000/svg">
-  <!-- 1994 Jaguar XJ220 - long, low, smooth curves -->
-  <path d="M5,152 L10,140 L28,120 L62,100 L108,83 L168,74 L228,73 L288,77 L335,90 L370,108 L393,130 L395,152 Z" fill="white"/>
-  <!-- windows -->
-  <polygon points="112,82 165,75 225,74 225,92 112,92" fill="#333"/>
-  <polygon points="230,74 283,78 283,92 230,92" fill="#333"/>
-  <!-- wheel cutouts -->
-  <circle cx="95" cy="135" r="20" fill="#111" stroke="white" stroke-width="4"/>
-  <circle cx="308" cy="135" r="20" fill="#111" stroke="white" stroke-width="4"/>
-  <!-- rims -->
-  <circle cx="95" cy="135" r="8" fill="#444" stroke="white" stroke-width="2"/>
-  <circle cx="308" cy="135" r="8" fill="#444" stroke="white" stroke-width="2"/>
+  <!-- XJ220: long, low, voluptuous curves - one of the most beautiful 90s supercars -->
+  <path d="M 5,150 Q 15,138 28,120 Q 50,98 90,83 Q 128,72 168,70 L 235,69 Q 282,70 322,84 Q 360,98 382,122 Q 394,138 396,150 Z" fill="white"/>
+
+  <!-- windshield: long, raked -->
+  <path d="M 94,82 Q 128,73 168,71 L 234,70 L 234,88 Q 170,89 130,90 Q 110,89 94,87 Z" fill="#2e2e2e"/>
+  <!-- rear window -->
+  <path d="M 239,70 Q 278,71 318,84 L 318,89 Q 280,76 239,88 Z" fill="#2e2e2e"/>
+
+  <!-- side vent gills (3 slots) behind door area -->
+  <rect x="324" y="92" width="4" height="22" rx="1" fill="#1e1e1e"/>
+  <rect x="332" y="92" width="4" height="22" rx="1" fill="#1e1e1e"/>
+  <rect x="340" y="92" width="4" height="22" rx="1" fill="#1e1e1e"/>
+
+  <!-- body crease: runs through the middle -->
+  <path d="M 28,138 Q 90,118 168,114 L 235,114 Q 282,114 338,122" stroke="#bbb" stroke-width="1.5" fill="none" opacity="0.4"/>
+
+  <!-- door seam -->
+  <line x1="235" y1="69" x2="238" y2="150" stroke="#ccc" stroke-width="1" opacity="0.4"/>
+
+  <!-- round headlights (pop-up era styling) -->
+  <ellipse cx="18" cy="128" rx="8" ry="7" fill="#ffffcc" opacity="0.9"/>
+  <ellipse cx="18" cy="128" rx="8" ry="7" fill="none" stroke="white" stroke-width="1.5"/>
+
+  <!-- rear taillights -->
+  <ellipse cx="388" cy="136" rx="6" ry="9" fill="#ff3322" opacity="0.85"/>
+
+  <!-- front wheel arch -->
+  <circle cx="94" cy="135" r="24" fill="#111"/>
+  <!-- rear wheel arch -->
+  <circle cx="309" cy="135" r="24" fill="#111"/>
+
+  <!-- front wheel -->
+  <g transform="translate(94,135)">
+    <circle r="20" fill="#1a1a1a" stroke="white" stroke-width="3"/>
+    <circle r="6" fill="#3a3a3a" stroke="#bbb" stroke-width="1.5"/>
+    <g stroke="#888" stroke-width="1.5">
+      <line x1="0" y1="-7" x2="0" y2="-17"/>
+      <line x1="0" y1="-7" x2="0" y2="-17" transform="rotate(72)"/>
+      <line x1="0" y1="-7" x2="0" y2="-17" transform="rotate(144)"/>
+      <line x1="0" y1="-7" x2="0" y2="-17" transform="rotate(216)"/>
+      <line x1="0" y1="-7" x2="0" y2="-17" transform="rotate(288)"/>
+    </g>
+  </g>
+
+  <!-- rear wheel -->
+  <g transform="translate(309,135)">
+    <circle r="20" fill="#1a1a1a" stroke="white" stroke-width="3"/>
+    <circle r="6" fill="#3a3a3a" stroke="#bbb" stroke-width="1.5"/>
+    <g stroke="#888" stroke-width="1.5">
+      <line x1="0" y1="-7" x2="0" y2="-17"/>
+      <line x1="0" y1="-7" x2="0" y2="-17" transform="rotate(72)"/>
+      <line x1="0" y1="-7" x2="0" y2="-17" transform="rotate(144)"/>
+      <line x1="0" y1="-7" x2="0" y2="-17" transform="rotate(216)"/>
+      <line x1="0" y1="-7" x2="0" y2="-17" transform="rotate(288)"/>
+    </g>
+  </g>
 </svg>

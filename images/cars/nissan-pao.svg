@@ -1,13 +1,58 @@
 <svg viewBox="0 0 400 165" xmlns="http://www.w3.org/2000/svg">
-  <!-- 1990 Nissan Pao - small retro compact, upright, rounded -->
-  <path d="M68,155 L66,130 L72,108 L90,88 L116,74 L152,67 L242,67 L276,74 L298,90 L315,112 L320,132 L320,155 Z" fill="white"/>
-  <!-- divided windshield and rear window -->
-  <rect x="108" y="73" width="58" height="28" rx="4" fill="#333"/>
-  <rect x="174" y="73" width="68" height="28" rx="4" fill="#333"/>
-  <!-- wheel cutouts -->
-  <circle cx="100" cy="135" r="20" fill="#111" stroke="white" stroke-width="4"/>
-  <circle cx="288" cy="135" r="20" fill="#111" stroke="white" stroke-width="4"/>
-  <!-- rims -->
-  <circle cx="100" cy="135" r="8" fill="#444" stroke="white" stroke-width="2"/>
-  <circle cx="288" cy="135" r="8" fill="#444" stroke="white" stroke-width="2"/>
+  <!-- Nissan Pao: retro European-inspired compact, upright, rounded wheel arches -->
+  <path d="M 65,152 Q 62,136 66,116 Q 70,95 88,82 Q 106,69 138,65 L 250,65 Q 278,68 296,82 Q 314,96 318,116 Q 322,136 320,152 Z" fill="white"/>
+
+  <!-- divided windshield (centre post is a Pao signature) -->
+  <path d="M 92,81 Q 108,70 138,66 L 188,66 L 188,87 Q 162,87 140,88 Q 116,87 92,85 Z" fill="#2e2e2e"/>
+  <!-- centre mullion -->
+  <line x1="188" y1="65" x2="188" y2="88" stroke="white" stroke-width="3.5"/>
+  <!-- rear quarter window -->
+  <rect x="193" y="66" width="64" height="22" rx="3" fill="#2e2e2e"/>
+
+  <!-- body waistline -->
+  <path d="M 66,120 Q 138,112 250,112 Q 290,112 316,120" stroke="#bbb" stroke-width="1.5" fill="none" opacity="0.42"/>
+
+  <!-- door seam -->
+  <line x1="193" y1="65" x2="196" y2="152" stroke="#ccc" stroke-width="1" opacity="0.45"/>
+
+  <!-- round front headlight (Pao has circular lights) -->
+  <circle cx="74" cy="88" r="9" fill="#ffffcc" opacity="0.88"/>
+  <circle cx="74" cy="88" r="9" fill="none" stroke="white" stroke-width="2"/>
+  <!-- inner reflector ring -->
+  <circle cx="74" cy="88" r="5" fill="none" stroke="#eee" stroke-width="1" opacity="0.6"/>
+
+  <!-- rear round taillight -->
+  <circle cx="314" cy="88" r="8" fill="#ff3322" opacity="0.85"/>
+  <circle cx="314" cy="88" r="8" fill="none" stroke="white" stroke-width="1.5"/>
+
+  <!-- front wheel arch -->
+  <circle cx="100" cy="136" r="22" fill="#111"/>
+  <!-- rear wheel arch -->
+  <circle cx="288" cy="136" r="22" fill="#111"/>
+
+  <!-- front wheel -->
+  <g transform="translate(100,136)">
+    <circle r="18" fill="#1a1a1a" stroke="white" stroke-width="3"/>
+    <circle r="5" fill="#3a3a3a" stroke="#bbb" stroke-width="1.5"/>
+    <g stroke="#888" stroke-width="1.5">
+      <line x1="0" y1="-6" x2="0" y2="-15"/>
+      <line x1="0" y1="-6" x2="0" y2="-15" transform="rotate(72)"/>
+      <line x1="0" y1="-6" x2="0" y2="-15" transform="rotate(144)"/>
+      <line x1="0" y1="-6" x2="0" y2="-15" transform="rotate(216)"/>
+      <line x1="0" y1="-6" x2="0" y2="-15" transform="rotate(288)"/>
+    </g>
+  </g>
+
+  <!-- rear wheel -->
+  <g transform="translate(288,136)">
+    <circle r="18" fill="#1a1a1a" stroke="white" stroke-width="3"/>
+    <circle r="5" fill="#3a3a3a" stroke="#bbb" stroke-width="1.5"/>
+    <g stroke="#888" stroke-width="1.5">
+      <line x1="0" y1="-6" x2="0" y2="-15"/>
+      <line x1="0" y1="-6" x2="0" y2="-15" transform="rotate(72)"/>
+      <line x1="0" y1="-6" x2="0" y2="-15" transform="rotate(144)"/>
+      <line x1="0" y1="-6" x2="0" y2="-15" transform="rotate(216)"/>
+      <line x1="0" y1="-6" x2="0" y2="-15" transform="rotate(288)"/>
+    </g>
+  </g>
 </svg>

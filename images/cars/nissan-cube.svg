@@ -1,13 +1,61 @@
 <svg viewBox="0 0 400 165" xmlns="http://www.w3.org/2000/svg">
-  <!-- 2010 Nissan Cube - famously box-shaped, tall, nearly rectangular -->
-  <path d="M62,155 L62,50 L86,44 L296,44 L320,50 L332,78 L332,155 Z" fill="white"/>
-  <!-- large greenhouse (characteristic of the Cube) -->
-  <rect x="80" y="50" width="70" height="44" rx="2" fill="#333"/>
-  <rect x="158" y="50" width="108" height="44" rx="2" fill="#333"/>
-  <!-- wheel cutouts -->
-  <circle cx="100" cy="135" r="22" fill="#111" stroke="white" stroke-width="4"/>
-  <circle cx="292" cy="135" r="22" fill="#111" stroke="white" stroke-width="4"/>
-  <!-- rims -->
-  <circle cx="100" cy="135" r="9" fill="#444" stroke="white" stroke-width="2"/>
-  <circle cx="292" cy="135" r="9" fill="#444" stroke="white" stroke-width="2"/>
+  <!-- Nissan Cube: famously rectangular, tall greenhouse, blunt front and rear -->
+  <path d="M 60,152 L 60,52 Q 68,43 88,42 L 292,42 Q 314,43 324,53 L 332,78 L 333,152 Z" fill="white"/>
+
+  <!-- A-to-B window (large) -->
+  <rect x="76" y="48" width="72" height="46" rx="2" fill="#2e2e2e"/>
+  <!-- B-to-C window (large) -->
+  <rect x="158" y="48" width="106" height="46" rx="2" fill="#2e2e2e"/>
+
+  <!-- B-pillar (thick) -->
+  <rect x="150" y="43" width="10" height="53" fill="#ddd" opacity="0.45"/>
+
+  <!-- A-pillar -->
+  <line x1="72" y1="45" x2="62" y2="64" stroke="#ccc" stroke-width="2.5" opacity="0.5"/>
+
+  <!-- roof edge -->
+  <line x1="88" y1="42" x2="292" y2="42" stroke="#ccc" stroke-width="2" opacity="0.45"/>
+
+  <!-- belt line / body crease -->
+  <line x1="60" y1="100" x2="333" y2="100" stroke="#bbb" stroke-width="1.5" opacity="0.35"/>
+
+  <!-- rectangular headlights -->
+  <rect x="61" y="66" width="10" height="20" rx="1" fill="#ffffcc" opacity="0.88"/>
+
+  <!-- rear vertical tail light bar -->
+  <rect x="327" y="54" width="8" height="32" rx="1" fill="#ff3322" opacity="0.85"/>
+
+  <!-- running board -->
+  <rect x="60" y="146" width="273" height="5" fill="#bbb" opacity="0.3"/>
+
+  <!-- front wheel arch -->
+  <circle cx="102" cy="135" r="24" fill="#111"/>
+  <!-- rear wheel arch -->
+  <circle cx="292" cy="135" r="24" fill="#111"/>
+
+  <!-- front wheel -->
+  <g transform="translate(102,135)">
+    <circle r="20" fill="#1a1a1a" stroke="white" stroke-width="3.5"/>
+    <circle r="6" fill="#3a3a3a" stroke="#bbb" stroke-width="1.5"/>
+    <g stroke="#888" stroke-width="1.5">
+      <line x1="0" y1="-7" x2="0" y2="-17"/>
+      <line x1="0" y1="-7" x2="0" y2="-17" transform="rotate(72)"/>
+      <line x1="0" y1="-7" x2="0" y2="-17" transform="rotate(144)"/>
+      <line x1="0" y1="-7" x2="0" y2="-17" transform="rotate(216)"/>
+      <line x1="0" y1="-7" x2="0" y2="-17" transform="rotate(288)"/>
+    </g>
+  </g>
+
+  <!-- rear wheel -->
+  <g transform="translate(292,135)">
+    <circle r="20" fill="#1a1a1a" stroke="white" stroke-width="3.5"/>
+    <circle r="6" fill="#3a3a3a" stroke="#bbb" stroke-width="1.5"/>
+    <g stroke="#888" stroke-width="1.5">
+      <line x1="0" y1="-7" x2="0" y2="-17"/>
+      <line x1="0" y1="-7" x2="0" y2="-17" transform="rotate(72)"/>
+      <line x1="0" y1="-7" x2="0" y2="-17" transform="rotate(144)"/>
+      <line x1="0" y1="-7" x2="0" y2="-17" transform="rotate(216)"/>
+      <line x1="0" y1="-7" x2="0" y2="-17" transform="rotate(288)"/>
+    </g>
+  </g>
 </svg>

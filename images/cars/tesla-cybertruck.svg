@@ -1,14 +1,59 @@
 <svg viewBox="0 0 400 165" xmlns="http://www.w3.org/2000/svg">
-  <!-- 2023 Tesla Cybertruck - all sharp angles, no curves whatsoever, pickup -->
-  <polygon points="15,155 15,126 55,80 95,60 238,60 238,82 372,82 372,155" fill="white"/>
-  <!-- entire front-to-cab is glazing on the Cybertruck -->
-  <polygon points="62,78 95,61 237,61 237,82 62,82" fill="#333"/>
-  <!-- cab / bed divider -->
-  <rect x="235" y="60" width="6" height="95" fill="#111"/>
-  <!-- wheel cutouts -->
-  <circle cx="100" cy="133" r="23" fill="#111" stroke="white" stroke-width="4"/>
-  <circle cx="318" cy="133" r="23" fill="#111" stroke="white" stroke-width="4"/>
-  <!-- rims - angular style -->
-  <circle cx="100" cy="133" r="9" fill="#444" stroke="white" stroke-width="2"/>
-  <circle cx="318" cy="133" r="9" fill="#444" stroke="white" stroke-width="2"/>
+  <!-- body: all hard angles, no curves -->
+  <polygon points="15,155 15,129 56,79 96,60 238,60 238,82 372,82 372,155" fill="white"/>
+
+  <!-- windshield: the entire raked section is glass -->
+  <polygon points="63,77 96,61 237,61 237,82 63,82" fill="#2e2e2e"/>
+
+  <!-- cab/bed divider with thickness -->
+  <rect x="234" y="60" width="7" height="95" fill="#111"/>
+
+  <!-- door crease line inside cab -->
+  <line x1="150" y1="61" x2="150" y2="82" stroke="#999" stroke-width="1" opacity="0.4"/>
+
+  <!-- bed panel lines -->
+  <line x1="272" y1="83" x2="272" y2="152" stroke="#aaa" stroke-width="1" opacity="0.3"/>
+  <line x1="318" y1="83" x2="318" y2="152" stroke="#aaa" stroke-width="1" opacity="0.3"/>
+  <!-- tonneau cover edge -->
+  <line x1="241" y1="83" x2="371" y2="83" stroke="#ccc" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- running board -->
+  <rect x="56" y="148" width="316" height="5" fill="#bbb" opacity="0.3"/>
+
+  <!-- front face: light bar (full width) -->
+  <rect x="16" y="112" width="8" height="18" rx="1" fill="#ddeeff" opacity="0.9"/>
+
+  <!-- rear tail-light bar -->
+  <rect x="367" y="90" width="7" height="32" rx="1" fill="#ff4422" opacity="0.85"/>
+
+  <!-- angular front wheel arch -->
+  <polygon points="70,155 70,136 80,124 113,124 122,136 122,155" fill="#111"/>
+  <!-- angular rear wheel arch -->
+  <polygon points="295,155 295,136 305,124 338,124 346,136 346,155" fill="#111"/>
+
+  <!-- front wheel -->
+  <g transform="translate(96,140)">
+    <circle r="19" fill="#1a1a1a" stroke="white" stroke-width="3"/>
+    <circle r="6" fill="#3a3a3a" stroke="#bbb" stroke-width="1.5"/>
+    <g stroke="#888" stroke-width="1.5">
+      <line x1="0" y1="-7" x2="0" y2="-16"/>
+      <line x1="0" y1="-7" x2="0" y2="-16" transform="rotate(72)"/>
+      <line x1="0" y1="-7" x2="0" y2="-16" transform="rotate(144)"/>
+      <line x1="0" y1="-7" x2="0" y2="-16" transform="rotate(216)"/>
+      <line x1="0" y1="-7" x2="0" y2="-16" transform="rotate(288)"/>
+    </g>
+  </g>
+
+  <!-- rear wheel -->
+  <g transform="translate(321,140)">
+    <circle r="19" fill="#1a1a1a" stroke="white" stroke-width="3"/>
+    <circle r="6" fill="#3a3a3a" stroke="#bbb" stroke-width="1.5"/>
+    <g stroke="#888" stroke-width="1.5">
+      <line x1="0" y1="-7" x2="0" y2="-16"/>
+      <line x1="0" y1="-7" x2="0" y2="-16" transform="rotate(72)"/>
+      <line x1="0" y1="-7" x2="0" y2="-16" transform="rotate(144)"/>
+      <line x1="0" y1="-7" x2="0" y2="-16" transform="rotate(216)"/>
+      <line x1="0" y1="-7" x2="0" y2="-16" transform="rotate(288)"/>
+    </g>
+  </g>
 </svg>

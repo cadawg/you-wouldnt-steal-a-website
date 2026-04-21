@@ -1,13 +1,64 @@
 <svg viewBox="0 0 400 165" xmlns="http://www.w3.org/2000/svg">
-  <!-- 2016 Lamborghini Aventador - very low, long front, wedge supercar -->
-  <path d="M5,155 L5,142 L22,126 L60,108 L105,92 L155,81 L205,76 L262,78 L312,85 L358,96 L390,112 L398,132 L398,155 Z" fill="white"/>
-  <!-- very low small greenhouse -->
-  <polygon points="110,91 158,81 202,77 202,93 110,93" fill="#333"/>
-  <polygon points="207,77 258,79 258,93 207,93" fill="#333"/>
-  <!-- wheel cutouts -->
-  <circle cx="98" cy="138" r="20" fill="#111" stroke="white" stroke-width="4"/>
-  <circle cx="315" cy="138" r="20" fill="#111" stroke="white" stroke-width="4"/>
-  <!-- rims -->
-  <circle cx="98" cy="138" r="8" fill="#444" stroke="white" stroke-width="2"/>
-  <circle cx="315" cy="138" r="8" fill="#444" stroke="white" stroke-width="2"/>
+  <!-- Aventador: extremely low, long front overhang, wedge supercar -->
+  <path d="M 5,152 L 5,143 L 20,128 L 52,110 L 98,93 L 150,82 L 200,77 L 260,78 L 308,85 L 350,96 L 382,112 L 396,133 L 398,152 Z" fill="white"/>
+
+  <!-- very raked windshield -->
+  <polygon points="103,92 152,82 198,78 198,93 103,93" fill="#2e2e2e"/>
+  <!-- small rear side window -->
+  <polygon points="203,78 256,79 256,93 203,93" fill="#2e2e2e"/>
+
+  <!-- front splitter -->
+  <rect x="5" y="149" width="55" height="4" fill="#ccc" opacity="0.55"/>
+
+  <!-- scissor door crease (diagonal) -->
+  <line x1="200" y1="78" x2="213" y2="152" stroke="#bbb" stroke-width="1" opacity="0.4"/>
+
+  <!-- side air intake (vertical slot behind rear door) -->
+  <rect x="260" y="88" width="5" height="26" rx="1" fill="#1e1e1e"/>
+  <line x1="262" y1="90" x2="262" y2="112" stroke="#555" stroke-width="1"/>
+
+  <!-- engine cover vents on rear deck -->
+  <line x1="312" y1="87" x2="342" y2="95" stroke="#bbb" stroke-width="1" opacity="0.45"/>
+  <line x1="312" y1="91" x2="344" y2="99" stroke="#bbb" stroke-width="1" opacity="0.45"/>
+  <line x1="312" y1="95" x2="345" y2="104" stroke="#bbb" stroke-width="1" opacity="0.45"/>
+
+  <!-- body crease line -->
+  <path d="M 20,142 L 150,118 L 260,116 L 348,126" stroke="#bbb" stroke-width="1.5" fill="none" opacity="0.38"/>
+
+  <!-- angular headlight strip -->
+  <polygon points="7,140 22,126 28,129 12,144" fill="#ddeeff" opacity="0.9"/>
+
+  <!-- rear light -->
+  <polygon points="384,114 397,135 393,136 380,115" fill="#ff3322" opacity="0.85"/>
+
+  <!-- front wheel arch -->
+  <circle cx="97" cy="138" r="26" fill="#111"/>
+  <!-- rear wheel arch -->
+  <circle cx="312" cy="138" r="26" fill="#111"/>
+
+  <!-- front wheel -->
+  <g transform="translate(97,138)">
+    <circle r="22" fill="#1a1a1a" stroke="white" stroke-width="3"/>
+    <circle r="6" fill="#3a3a3a" stroke="#bbb" stroke-width="1.5"/>
+    <g stroke="#888" stroke-width="1.5">
+      <line x1="0" y1="-7" x2="0" y2="-19"/>
+      <line x1="0" y1="-7" x2="0" y2="-19" transform="rotate(72)"/>
+      <line x1="0" y1="-7" x2="0" y2="-19" transform="rotate(144)"/>
+      <line x1="0" y1="-7" x2="0" y2="-19" transform="rotate(216)"/>
+      <line x1="0" y1="-7" x2="0" y2="-19" transform="rotate(288)"/>
+    </g>
+  </g>
+
+  <!-- rear wheel -->
+  <g transform="translate(312,138)">
+    <circle r="22" fill="#1a1a1a" stroke="white" stroke-width="3"/>
+    <circle r="6" fill="#3a3a3a" stroke="#bbb" stroke-width="1.5"/>
+    <g stroke="#888" stroke-width="1.5">
+      <line x1="0" y1="-7" x2="0" y2="-19"/>
+      <line x1="0" y1="-7" x2="0" y2="-19" transform="rotate(72)"/>
+      <line x1="0" y1="-7" x2="0" y2="-19" transform="rotate(144)"/>
+      <line x1="0" y1="-7" x2="0" y2="-19" transform="rotate(216)"/>
+      <line x1="0" y1="-7" x2="0" y2="-19" transform="rotate(288)"/>
+    </g>
+  </g>
 </svg>

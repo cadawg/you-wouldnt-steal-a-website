@@ -1,14 +1,58 @@
 <svg viewBox="0 0 400 165" xmlns="http://www.w3.org/2000/svg">
-  <!-- 1970 Dodge Challenger - muscle car, long hood, fastback -->
-  <path d="M8,155 L8,122 L38,90 L72,74 L145,65 L260,65 L298,73 L345,92 L388,112 L392,132 L392,155 Z" fill="white"/>
-  <!-- windows -->
-  <polygon points="50,89 88,73 145,66 145,91 50,91" fill="#333"/>
-  <polygon points="150,66 255,66 255,91 150,91" fill="#333"/>
-  <polygon points="260,66 294,74 294,91 260,91" fill="#333"/>
-  <!-- wheel cutouts -->
-  <circle cx="90" cy="135" r="22" fill="#111" stroke="white" stroke-width="4"/>
-  <circle cx="308" cy="135" r="22" fill="#111" stroke="white" stroke-width="4"/>
-  <!-- rims -->
-  <circle cx="90" cy="135" r="9" fill="#444" stroke="white" stroke-width="2"/>
-  <circle cx="308" cy="135" r="9" fill="#444" stroke="white" stroke-width="2"/>
+  <!-- 1970 Dodge Challenger: long hood, fastback roofline, wide haunches -->
+  <path d="M 8,152 L 8,124 L 36,94 L 60,80 L 140,72 Q 162,64 188,64 L 265,64 Q 290,64 305,73 L 318,83 L 346,98 L 380,116 L 392,136 L 392,152 Z" fill="white"/>
+
+  <!-- windshield -->
+  <path d="M 65,79 L 140,73 Q 162,65 185,65 L 185,88 Q 164,88 143,89 L 65,89 Z" fill="#2e2e2e"/>
+  <!-- side window -->
+  <rect x="190" y="65" width="68" height="24" rx="1" fill="#2e2e2e"/>
+  <!-- quarter window (small) -->
+  <polygon points="262,65 302,74 302,88 262,88" fill="#2e2e2e"/>
+
+  <!-- hood power-bulge centre line -->
+  <line x1="60" y1="80" x2="140" y2="72" stroke="#ccc" stroke-width="1.5" opacity="0.45"/>
+
+  <!-- body character line running the full length -->
+  <path d="M 36,118 L 140,110 L 318,110 L 346,118" stroke="#bbb" stroke-width="1.5" fill="none" opacity="0.4"/>
+
+  <!-- door seam -->
+  <line x1="190" y1="64" x2="190" y2="152" stroke="#ccc" stroke-width="1" opacity="0.35"/>
+
+  <!-- front headlight (round lamp housing) -->
+  <circle cx="18" cy="105" r="9" fill="#ffffcc" opacity="0.85"/>
+  <circle cx="18" cy="105" r="9" fill="none" stroke="white" stroke-width="2"/>
+
+  <!-- rear taillight bar -->
+  <rect x="381" y="118" width="12" height="18" rx="2" fill="#ff3322" opacity="0.85"/>
+
+  <!-- front wheel arch -->
+  <circle cx="90" cy="135" r="25" fill="#111"/>
+  <!-- rear wheel arch -->
+  <circle cx="308" cy="135" r="25" fill="#111"/>
+
+  <!-- front wheel -->
+  <g transform="translate(90,135)">
+    <circle r="21" fill="#1a1a1a" stroke="white" stroke-width="3.5"/>
+    <circle r="6" fill="#3a3a3a" stroke="#bbb" stroke-width="1.5"/>
+    <g stroke="#888" stroke-width="1.5">
+      <line x1="0" y1="-7" x2="0" y2="-18"/>
+      <line x1="0" y1="-7" x2="0" y2="-18" transform="rotate(72)"/>
+      <line x1="0" y1="-7" x2="0" y2="-18" transform="rotate(144)"/>
+      <line x1="0" y1="-7" x2="0" y2="-18" transform="rotate(216)"/>
+      <line x1="0" y1="-7" x2="0" y2="-18" transform="rotate(288)"/>
+    </g>
+  </g>
+
+  <!-- rear wheel -->
+  <g transform="translate(308,135)">
+    <circle r="21" fill="#1a1a1a" stroke="white" stroke-width="3.5"/>
+    <circle r="6" fill="#3a3a3a" stroke="#bbb" stroke-width="1.5"/>
+    <g stroke="#888" stroke-width="1.5">
+      <line x1="0" y1="-7" x2="0" y2="-18"/>
+      <line x1="0" y1="-7" x2="0" y2="-18" transform="rotate(72)"/>
+      <line x1="0" y1="-7" x2="0" y2="-18" transform="rotate(144)"/>
+      <line x1="0" y1="-7" x2="0" y2="-18" transform="rotate(216)"/>
+      <line x1="0" y1="-7" x2="0" y2="-18" transform="rotate(288)"/>
+    </g>
+  </g>
 </svg>

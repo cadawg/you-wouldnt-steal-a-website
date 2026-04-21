@@ -1,16 +1,70 @@
 <svg viewBox="0 0 400 165" xmlns="http://www.w3.org/2000/svg">
-  <!-- 2004 Pontiac Aztek - chunky crossover, higher ride, famously ugly -->
-  <path d="M18,155 L18,116 L46,88 L78,74 L128,62 L258,62 L295,67 L342,82 L378,106 L388,128 L388,155 Z" fill="white"/>
-  <!-- windows -->
-  <polygon points="53,87 82,74 128,63 128,87 53,87" fill="#333"/>
-  <polygon points="133,63 253,63 253,87 133,87" fill="#333"/>
-  <polygon points="258,63 290,68 290,87 258,87" fill="#333"/>
-  <!-- distinctive Aztek lower body cladding (two-tone effect) -->
-  <path d="M18,128 L18,155 L388,155 L388,128 Z" fill="rgba(160,160,160,0.3)"/>
-  <!-- wheel cutouts (slightly larger - SUV tyres) -->
-  <circle cx="88" cy="133" r="23" fill="#111" stroke="white" stroke-width="4"/>
-  <circle cx="308" cy="133" r="23" fill="#111" stroke="white" stroke-width="4"/>
-  <!-- rims -->
-  <circle cx="88" cy="133" r="9" fill="#444" stroke="white" stroke-width="2"/>
-  <circle cx="308" cy="133" r="9" fill="#444" stroke="white" stroke-width="2"/>
+  <!-- Pontiac Aztek: the famously ugly crossover, two-tone cladding, chunky proportions -->
+
+  <!-- upper painted body -->
+  <path d="M 18,152 L 18,118 L 44,88 L 76,74 L 128,62 L 258,62 L 294,67 L 340,81 L 376,104 L 387,126 L 388,152 Z" fill="white"/>
+
+  <!-- lower plastic body cladding (slightly grey-tinted) -->
+  <path d="M 18,128 L 44,116 L 128,110 L 258,110 L 340,116 L 386,128 L 388,152 L 18,152 Z" fill="#d8d8d8" opacity="0.55"/>
+
+  <!-- front window -->
+  <polygon points="52,87 80,74 128,63 128,87 52,87" fill="#2e2e2e"/>
+  <!-- main cabin window -->
+  <rect x="133" y="63" width="120" height="25" rx="1" fill="#2e2e2e"/>
+  <!-- C-pillar window -->
+  <polygon points="258,63 290,68 290,87 258,87" fill="#2e2e2e"/>
+
+  <!-- roof rails (Aztek had a distinctive external rack) -->
+  <rect x="128" y="61" width="130" height="3" fill="#ccc" opacity="0.6"/>
+  <!-- rack uprights -->
+  <line x1="155" y1="62" x2="155" y2="56" stroke="#ccc" stroke-width="2" opacity="0.5"/>
+  <line x1="230" y1="62" x2="230" y2="56" stroke="#ccc" stroke-width="2" opacity="0.5"/>
+  <line x1="155" y1="56" x2="230" y2="56" stroke="#ccc" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- A-pillar -->
+  <line x1="128" y1="62" x2="80" y2="87" stroke="#ccc" stroke-width="2" opacity="0.45"/>
+
+  <!-- door seams -->
+  <line x1="133" y1="63" x2="133" y2="110" stroke="#ccc" stroke-width="1" opacity="0.4"/>
+  <line x1="258" y1="63" x2="258" y2="110" stroke="#ccc" stroke-width="1" opacity="0.4"/>
+
+  <!-- front headlights (Aztek's angular dual headlight) -->
+  <polygon points="20,99 40,86 46,91 24,106" fill="#ffffcc" opacity="0.88"/>
+
+  <!-- rear vertical taillights -->
+  <rect x="380" y="106" width="10" height="24" rx="1" fill="#ff3322" opacity="0.85"/>
+
+  <!-- cladding separation line -->
+  <path d="M 18,128 L 44,116 L 258,110 L 340,116 L 386,128" stroke="#999" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+  <!-- front wheel arch -->
+  <circle cx="88" cy="133" r="25" fill="#111"/>
+  <!-- rear wheel arch -->
+  <circle cx="308" cy="133" r="25" fill="#111"/>
+
+  <!-- front wheel -->
+  <g transform="translate(88,133)">
+    <circle r="21" fill="#1a1a1a" stroke="white" stroke-width="3.5"/>
+    <circle r="6" fill="#3a3a3a" stroke="#bbb" stroke-width="1.5"/>
+    <g stroke="#888" stroke-width="1.5">
+      <line x1="0" y1="-7" x2="0" y2="-18"/>
+      <line x1="0" y1="-7" x2="0" y2="-18" transform="rotate(72)"/>
+      <line x1="0" y1="-7" x2="0" y2="-18" transform="rotate(144)"/>
+      <line x1="0" y1="-7" x2="0" y2="-18" transform="rotate(216)"/>
+      <line x1="0" y1="-7" x2="0" y2="-18" transform="rotate(288)"/>
+    </g>
+  </g>
+
+  <!-- rear wheel -->
+  <g transform="translate(308,133)">
+    <circle r="21" fill="#1a1a1a" stroke="white" stroke-width="3.5"/>
+    <circle r="6" fill="#3a3a3a" stroke="#bbb" stroke-width="1.5"/>
+    <g stroke="#888" stroke-width="1.5">
+      <line x1="0" y1="-7" x2="0" y2="-18"/>
+      <line x1="0" y1="-7" x2="0" y2="-18" transform="rotate(72)"/>
+      <line x1="0" y1="-7" x2="0" y2="-18" transform="rotate(144)"/>
+      <line x1="0" y1="-7" x2="0" y2="-18" transform="rotate(216)"/>
+      <line x1="0" y1="-7" x2="0" y2="-18" transform="rotate(288)"/>
+    </g>
+  </g>
 </svg>
